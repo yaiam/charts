@@ -13,7 +13,7 @@ jobs:
     env:
       project: denji
     permissions:
-      contents: write
+      packages: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
