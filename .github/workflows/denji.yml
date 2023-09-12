@@ -21,8 +21,13 @@ jobs:
         uses: azure/setup-helm@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Get the chart version
+        id: version
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq '.version' ./charts/denji/Chart.yaml
       - name: Publish
         run: |
           helm registry login -u ${{ github.repository_owner }} -p ${{ secrets.GITHUB_TOKEN }} ghcr.io/${{ github.repository_owner }}/denji
           helm package charts/denji -d dist
-          find ./dist -type f -iname "*.tgz" | xargs -I "{}" helm push "{}" "oci://ghcr.io/${{ github.repository_owner }}/denji:{}"
+          helm push ./dist/denji-${{ steps.get_username.outputs.result }}.tgz oci://ghcr.io/${{ github.repository_owner }}/denji:${{ steps.get_username.outputs.result }}
