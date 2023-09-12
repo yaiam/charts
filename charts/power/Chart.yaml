@@ -21,4 +21,10 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "1.16.0"
+appVersion: "b4028b7e1490a646e49ce4800cbb1b8ee83ad89b"
+
+dependencies:
+  - name: postgresql
+    condition: postgresql.enabled
+    repository: oci://registry-1.docker.io/bitnamicharts
+    version: ^12.11.1
