@@ -24,3 +24,4 @@ jobs:
       - name: Publish
         run: |
           helm registry login -u ${{ vars.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }} registry-1.docker.io
+          helm package charts/denji -d dist
