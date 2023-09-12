@@ -1,11 +1,11 @@
 name: main
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/beam.yml
-      - charts/beam/**
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - .github/workflows/beam.yml
+#       - charts/beam/**
 jobs:
   build:
     name: Build & Push

@@ -1,11 +1,11 @@
 name: main
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/power-ui.yml
-      - charts/power-ui/**
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - .github/workflows/power-ui.yml
+#       - charts/power-ui/**
 jobs:
   build:
     name: Build & Push

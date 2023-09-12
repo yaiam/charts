@@ -1,11 +1,11 @@
 name: main
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/denji.yml
-      - charts/denji/**
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - .github/workflows/denji.yml
+#       - charts/denji/**
 jobs:
   build:
     name: Build & Push
