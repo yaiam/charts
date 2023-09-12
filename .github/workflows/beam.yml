@@ -4,14 +4,14 @@ on:
     branches:
       - main
     paths:
-      - .github/workflows/denji.yml
-      - charts/denji/**
+      - .github/workflows/beam.yml
+      - charts/beam/**
 jobs:
   build:
     name: Build & Push
     runs-on: ubuntu-latest
     env:
-      project: denji
+      project: beam
     permissions:
       packages: write
     steps:

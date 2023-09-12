@@ -4,14 +4,14 @@ on:
     branches:
       - main
     paths:
-      - .github/workflows/denji.yml
-      - charts/denji/**
+      - .github/workflows/power-ui.yml
+      - charts/power-ui/**
 jobs:
   build:
     name: Build & Push
     runs-on: ubuntu-latest
     env:
-      project: denji
+      project: power-ui
     permissions:
       packages: write
     steps:
