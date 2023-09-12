@@ -23,6 +23,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish
         run: |
-          helm registry login -u ${{ vars.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }} registry-1.docker.io
+          helm registry login -u ${{ github.repository_owner }} -p ${{ secrets.GITHUB_TOKEN }} ghcr.io/${{ github.repository_owner }}/denji
           helm package charts/denji -d dist
-          find ./dist -type f -iname "*.tgz" | xargs -I "{}" echo "{}"
+          find ./dist -type f -iname "*.tgz" | xargs -I "{}" helm push "{}" "ghcr.io/${{ github.repository_owner }}/denji:{}"
