@@ -32,4 +32,4 @@ jobs:
         run: |
           helm registry login -u ${{ github.repository_owner }} -p ${{ secrets.GITHUB_TOKEN }} ghcr.io/${{ github.repository_owner }}/${{ env.project }}
           helm package charts/${{ env.project }} -d dist
-          helm push ./dist/${{ env.project }}-${{ steps.version.outputs.result }}.tgz oci://ghcr.io/${{ github.repository_owner }}/${{ env.project }}:${{ steps.version.outputs.result }}
+          helm push ./dist/${{ env.project }}-${{ steps.version.outputs.result }}.tgz oci://ghcr.io/${{ github.repository_owner }}/${{ env.project }}
