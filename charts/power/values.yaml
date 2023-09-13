@@ -13,6 +13,7 @@ image:
 env:
   Database__ConnectionString: "Host=localhost;Port=20002;Username=auth;Password=auth;Database=auth;"
   Auth__BaseUrl: "https://localhost:20000"
+  Cors__Origins__0: "http://localhost:20020"
 
 imagePullSecrets: []
 nameOverride: ""

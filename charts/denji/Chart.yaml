@@ -21,7 +21,7 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "c0042af9e930abc50213b33d2f5d26a4142fc4fc"
+appVersion: "5f018c5db44ed2b0b9bb1a7bed3830c22b82c538"
 
 dependencies:
   - name: postgresql
