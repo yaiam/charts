@@ -31,5 +31,6 @@ jobs:
       - name: Publish
         run: |
           helm registry login -u ${{ vars.CHARTSHUB_USERNAME }} -p ${{ secrets.CHARTSHUB_TOKEN }} registry-1.docker.io
+          helm dependency update charts/${{ env.project }}
           helm package charts/${{ env.project }} -d dist
           helm push dist/${{ env.project }}-${{ steps.version.outputs.result }}.tgz oci://registry-1.docker.io/${{ vars.CHARTSHUB_USERNAME }}
