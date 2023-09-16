@@ -1,17 +1,17 @@
-name: power-ui
+name: cosmo
 on:
   push:
     branches:
       - main
     paths:
-      - .github/workflows/power-ui.yml
-      - charts/power-ui/**
+      - .github/workflows/cosmo.yml
+      - charts/cosmo/**
 jobs:
   build:
     name: Build & Push
     runs-on: ubuntu-latest
     env:
-      project: power-ui
+      project: cosmo
     permissions:
       packages: write
     steps:
