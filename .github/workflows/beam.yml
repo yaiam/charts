@@ -28,7 +28,13 @@ jobs:
         uses: mikefarah/yq@master
         with:
           cmd: yq '.version' ./charts/${{ env.project }}/Chart.yaml
+      - name: Check if exists
+        id: check
+        run: |
+          helm pull "oci://registry-1.docker.io/yaiamcharts/${{ env.project }}" --version "${{ steps.version.outputs.result }}" > /dev/null 2>&1
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
       - name: Publish
+        if: ${{ steps.check.outputs.exit_code != 0 }}
         run: |
           helm registry login -u ${{ vars.CHARTSHUB_USERNAME }} -p ${{ secrets.CHARTSHUB_TOKEN }} registry-1.docker.io
           helm dependency update charts/${{ env.project }}
