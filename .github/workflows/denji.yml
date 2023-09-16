@@ -31,7 +31,7 @@ jobs:
       - name: Check if exists
         id: check
         run: |
-          set +x
+          set +e
           helm pull "oci://registry-1.docker.io/yaiamcharts/${{ env.project }}" --version "${{ steps.version.outputs.result }}" > /dev/null 2>&1
           echo "exit_code=$?" >> "$GITHUB_OUTPUT"
       - name: Publish
