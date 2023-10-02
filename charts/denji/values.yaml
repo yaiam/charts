@@ -11,8 +11,8 @@ image:
   tag: ""
 
 env:
-  Database__ConnectionString: "Host=localhost;Port=20002;Username=auth;Password=auth;Database=auth;"
-  IdentityUI__BaseUrl: "http://localhost:20020"
+  Cosmo__BaseUrl: "http://localhost:20020"
+  Database__ConnectionString: "Host=localhost;Port=20002;Username=denji;Password=denji;Database=denji;"
 
 imagePullSecrets: []
 nameOverride: ""
