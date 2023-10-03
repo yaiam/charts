@@ -11,9 +11,12 @@ image:
   tag: ""
 
 env:
-  Denji__BaseUrl: "https://localhost:20000"
-  Denji__IssuerUrl__0: "https://auth:80"
-  Denji__IssuerUrl__1: "https://localhost:20000"
+  - name: "Denji__BaseUrl"
+    value: "https://localhost:20000"
+  - name: "Denji__IssuerUrl__0"
+    value: "https://auth:80"
+  - name: "Denji__IssuerUrl__1"
+    value: "https://localhost:20000"
 
 imagePullSecrets: []
 nameOverride: ""

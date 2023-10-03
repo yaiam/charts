@@ -11,10 +11,14 @@ image:
   tag: ""
 
 env:
-  Cosmo__BaseUrl: "http://localhost:20020"
-  Cors__Origins__0: "http://localhost:20020"
-  Database__ConnectionString: "Host=localhost;Port=20002;Username=auth;Password=auth;Database=auth;"
-  Denji__BaseUrl: "https://localhost:20000"
+  - name: "Cosmo__BaseUrl"
+    value: "http://localhost:20020"
+  - name: "Cors__Origins__0"
+    value: "http://localhost:20020"
+  - name: "Database__ConnectionString"
+    value: "Host=localhost;Port=20002;Username=auth;Password=auth;Database=auth;"
+  - name: "Denji__BaseUrl"
+    value: "https://localhost:20000"
 
 imagePullSecrets: []
 nameOverride: ""

@@ -11,8 +11,10 @@ image:
   tag: ""
 
 env:
-  NEXT_PUBLIC_DENJI_PUBLIC_BASE_URL: "http://localhost:20000"
-  NEXT_PUBLIC_POWER_PUBLIC_BASE_URL: "http://localhost:20010"
+  - name: "NEXT_PUBLIC_DENJI_PUBLIC_BASE_URL"
+    value: "http://localhost:20000"
+  - name: "NEXT_PUBLIC_POWER_PUBLIC_BASE_URL"
+    value: "http://localhost:20010"
 
 imagePullSecrets: []
 nameOverride: ""

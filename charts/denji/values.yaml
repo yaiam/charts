@@ -11,8 +11,10 @@ image:
   tag: ""
 
 env:
-  Cosmo__BaseUrl: "http://localhost:20020"
-  Database__ConnectionString: "Host=localhost;Port=20002;Username=denji;Password=denji;Database=denji;"
+  - name: "Cosmo__BaseUrl"
+    value: "http://localhost:20020"
+  - name: "Database__ConnectionString"
+    value: "Host=localhost;Port=20002;Username=denji;Password=denji;Database=denji;"
 
 imagePullSecrets: []
 nameOverride: ""
