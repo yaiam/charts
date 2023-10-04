@@ -1,0 +1,12 @@
+dependencies:
+- name: denji
+  repository: oci://registry-1.docker.io/yaiamcharts
+  version: 0.1.0-alpha.4.2
+- name: power
+  repository: oci://registry-1.docker.io/yaiamcharts
+  version: 0.1.0-alpha.2.1
+- name: cosmo
+  repository: oci://registry-1.docker.io/yaiamcharts
+  version: 0.1.0-alpha.2.2
+digest: sha256:74e8d15b97fa424f8f5bdf52e5ec211a9905443e9a5b2c374e2ce1590a0397cf
+generated: "2023-10-04T23:42:43.423662+03:00"
