@@ -10,6 +10,6 @@ dependencies:
   version: 0.1.0-alpha.3
 - name: beam
   repository: oci://registry-1.docker.io/yaiamcharts
-  version: 0.1.0-alpha.3.1
-digest: sha256:ba6fb19048a3aac2cd853c80b847246cd6697325aac2105e01f51f9c50fdc8c9
-generated: "2023-12-19T22:14:18.586389+03:00"
+  version: 0.1.0-alpha.3.2
+digest: sha256:66e371e74f6edc8c84a892b902fb0ab9032bd1524299c717523e0983db737c32
+generated: "2023-12-19T22:40:20.701626+03:00"
