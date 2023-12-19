@@ -39,11 +39,9 @@ spec:
             {{- end }}
             - name: "ASPNETCORE_ENVIRONMENT"
               value: "Production"
-            - name: "ASPNETCORE_URLS"
-              value: "http://+:{{ .Values.service.port }}"
           ports:
-            - name: http
-              containerPort: {{ .Values.service.port }}
+            - name: public
+              containerPort: {{ .Values.service.publicPort }}
               protocol: TCP
           # livenessProbe:
           #   httpGet:

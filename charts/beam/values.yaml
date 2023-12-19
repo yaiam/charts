@@ -44,7 +44,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  publicPort: 10001
 
 ingress:
   enabled: false
