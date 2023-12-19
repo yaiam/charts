@@ -17,7 +17,7 @@ env:
     value: "http://localhost:20020"
   - name: "Database__ConnectionString"
     value: "Host=localhost;Port=20002;Username=auth;Password=auth;Database=auth;"
-  - name: "Denji__BaseUrl"
+  - name: "Denji__PrivateApi__BaseUrl"
     value: "https://localhost:20000"
 
 imagePullSecrets: []
