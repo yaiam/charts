@@ -55,11 +55,11 @@ spec:
           livenessProbe:
             httpGet:
               path: /health/live
-              port: http
+              port: private
           readinessProbe:
             httpGet:
               path: /health/ready
-              port: http
+              port: private
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
