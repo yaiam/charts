@@ -8,5 +8,8 @@ dependencies:
 - name: cosmo
   repository: oci://registry-1.docker.io/yaiamcharts
   version: 0.1.0-alpha.3
-digest: sha256:d8a8786dec8cc76947c243c55e7dcba1bd28fc2631da21ff48e234d45ba10e82
-generated: "2023-12-19T22:08:35.649018+03:00"
+- name: beam
+  repository: oci://registry-1.docker.io/yaiamcharts
+  version: 0.1.0-alpha.3.1
+digest: sha256:ba6fb19048a3aac2cd853c80b847246cd6697325aac2105e01f51f9c50fdc8c9
+generated: "2023-12-19T22:14:18.586389+03:00"
