@@ -7,9 +7,13 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
+    - port: {{ .Values.service.privatePort }}
+      targetPort: private
       protocol: TCP
-      name: http
+      name: private
+    - port: {{ .Values.service.publicPort }}
+      targetPort: public
+      protocol: TCP
+      name: public
   selector:
     {{- include "power.selectorLabels" . | nindent 4 }}
