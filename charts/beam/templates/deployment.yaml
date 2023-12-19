@@ -39,6 +39,8 @@ spec:
             {{- end }}
             - name: "ASPNETCORE_ENVIRONMENT"
               value: "Production"
+            - name: "PublicApi__HttpPort"
+              value: "{{ .Values.service.publicPort }}"
           ports:
             - name: public
               containerPort: {{ .Values.service.publicPort }}
