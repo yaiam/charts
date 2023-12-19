@@ -4,12 +4,12 @@ dependencies:
   version: 0.1.0-alpha.4.2
 - name: power
   repository: oci://registry-1.docker.io/yaiamcharts
-  version: 0.1.0-alpha.4.1
+  version: 0.1.0-alpha.4.2
 - name: cosmo
   repository: oci://registry-1.docker.io/yaiamcharts
   version: 0.1.0-alpha.3
 - name: beam
   repository: oci://registry-1.docker.io/yaiamcharts
   version: 0.1.0-alpha.3.2
-digest: sha256:66e371e74f6edc8c84a892b902fb0ab9032bd1524299c717523e0983db737c32
-generated: "2023-12-19T22:40:20.701626+03:00"
+digest: sha256:664c33dc03fae7b23daa087313c30e2f65fc853c902498046a8b5b02695b8cf3
+generated: "2023-12-19T22:43:27.23941+03:00"
